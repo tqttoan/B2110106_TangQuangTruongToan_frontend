@@ -1,5 +1,9 @@
 <template>
-  <Form @submit="submitContact" :validation-schema="contactFormSchema">
+  <Form
+    @submit="submitContact"
+    :validation-schema="contactFormSchema"
+    class="contactForm"
+  >
     <div class="form-group">
       <label for="name">Tên</label>
       <Field
@@ -123,3 +127,7 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+@import "@/assets/form.css";
+</style>
